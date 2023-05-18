@@ -1,7 +1,10 @@
-let arr = ['sprots', 'singing','cooking'];
-console.log(arr);
+let array = ['apple', 'oranges', ' ', 'mango', ' ', 'lemon'];
 
-let arr1 = arr.map((str)=>{
-   return 'Hobby '+str
+let array1 = array.map((element) => {
+  if (element === ' ') {
+    return 'empty string';
+  }
+  return element;
 });
-console.log(arr1);
+
+console.log(array1);
